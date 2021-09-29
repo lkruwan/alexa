@@ -1,6 +1,6 @@
 {
   "name": "WhatsAlexa",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "WhatsAlexa is a Helper WhatsApp Bot Written with Baileys Which is hosted on Heroku Cloud Server. Also Alexa has a Lot of Commands/Features, Including Artificial Intelligence [ AI ] Features/Commands.",
   "main": "./WhatsAlexa/bot.js",
   "scripts": {
@@ -11,11 +11,7 @@
     "url": "git+https://github.com/TOXIC-DEVIL/WhatsAlexa.git"
   },
   "keywords": [
-    "whatsapp",
-    "bot",
-    "ai",
-    "alexa",
-    "WhatsAlexa"
+    "whatsapp"
   ],
   "author": "TOXIC-DEVIL",
   "developer": "TOXIC-DEVIL",
@@ -27,7 +23,6 @@
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",
-    "textmaker-thiccy": "^1.2.1",
     "browser-id3-writer": "^4.4.0",
     "playstore-scraper": "^1.0.0",
     "axios": "^0.21.1",
@@ -43,6 +38,7 @@
     "dotenv": "^8.2.0",
     "tiktok-scraper": "1.4.20",
     "request": "2.88.2",
+    "temp-mail-api": "1.1.1",
     "exchange-rates-api": "^1.0.2",
     "fluent-ffmpeg": "^2.1.2",
     "form-data": "^4.0.0",

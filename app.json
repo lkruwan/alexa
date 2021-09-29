@@ -1,8 +1,8 @@
 {
     "name": "WhatsAlexa",
-    "description": "WhatsAlexa is a Helper WhatsApp Bot Written with Baileys Which is hosted on Heroku Cloud Server. Also Alexa has a Lot of Commands/Features, Including Artificial Intelligence [ AI ] Features/Commands.",
+    "description": "WhatsAlexa is a Helper WhatsApp Bot Written By @TOXIC-DEVIL with Baileys. Alexa has a lot of Features/Commans Including Voice Chat [ AI ].",
     "logo": "https://i.ibb.co/KGMms2Z/Whats-Alexa.jpg",
-    "keywords": ["whatsapp", "userbot", "Alexa", "WhatsAlexa", "bot", "api", "ai"],
+    "keywords": ["whatsapp", "Voice", "Alexa", "WhatsAlexa", "bot", "api", "ai"],
     "repository": "https://github.com/TOXIC-DEVIL/WhatsAlexa",
     "website":   "https://toxic-devil.github.io",
     "success_url": "https://toxic-devil.github.io",
@@ -13,11 +13,11 @@
             "required": true
         },
         "SUDO": {
-            "description": "Leave blank if you don't know how to use it! Private commands can be used by this admins! SUDO; Your number must be an international number. So you should have your number after the country code. Example: 9199xxxxxxxx ( This is an Example of Indian number +91 )",
+            "description": "It gives all the privileges to the users. => 91xxx,0,91xxx,0,91xxx...",
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot language. English => en, Malayalam => ml, Indonesia => ID. ( Select any one )",
+            "description": "Bot languages. Malayalam => ML, Indonesia => ID, English => EN ( Enter any one only )",
             "required": true,
             "value": "EN"
         },
@@ -26,25 +26,35 @@
             "required": true,
             "value": "false"
         },
-        "AUTO_BIO": {
-            "description": "Changes your bio automaticly to a Time clock.",
-            "required": true,
-            "value": "false"
-        },
         "HANDLERS": {
-            "description": "Komutlar için. For commands.",
+            "description": "Symbol used infront of a command ( Prefix ). NOTE : ONLY SYMBOL CAN BE USED, DON'T ENTER ANY OTHER LATIN WORDS / ALPHABETS, IF IT HAPPENS BOT WILL NOT WORK.",
             "required": true,
             "value": "^[#.!]"
+        },
+        "PRIVATE_DELETING_MESSAGE": {
+            "description": "if you want to delete the command send by You/User set true else type false.",
+            "required": true,
+            "value": "false"
         },
         "OWNER_NAME": {
             "description": "Enter the owner name, You must enter your name ( This name will be shown on some commands )",
             "required": false,
             "value": "TOXIC DEVIL"
         },
+        "AUTO_BIO": {
+            "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 919xxxx && 917xxxx-1xxx or 915xxxx,919xxx...",
+            "required": false,
+            "value": "false"
+        },
         "OWNER_NUMBER": {
             "description": "Enter the owner number, You must enter your number, Please don't enter the number with country code ( example : 91 for indian ) Also don't enter space & + on the number ( example : 91996132xxxx for indian ). ( This number will be shown on some commands )",
             "required": false,
-            "value": "94768826133"
+            "value": "919400846679"
         },
         "SEND_READ": {
             "description": "The bot reads the incoming messages ( only commands sent by others so privacy is not breaking there ).",
@@ -60,78 +70,24 @@
             "description": "Enter your heroku api key [ You can get it from here : https://dashboard.heroku.com/account Scroll down to end, click reveal button & Copy the API KEY ].",
             "required": true
         },
-        "MUTE_MESSAGE": {
-            "description": "Customizable Mute Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "BLOCK_CHAT": {
-            "description": "Choose in which chat the bot won't work there. Ex: 915xxxx && 915xxxx-1xxx or 915xxxx,915xxx...",
-            "required": false,
-            "value": "false"
-        },
-        "UNMUTE_MESSAGE": {
-            "description": "Customizable Unmute Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "BLOCK_MESSAGE": {
-            "description": "Customizable Block Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "UNBLOCK_MESSAGE": {
-            "description": "Customizable Unblock Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
         "WORK_TYPE": {
             "description": "WhatsAlexa Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
+        "BOT_PRESENCE": {
+            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
+            "required": false,
+            "value": "offline"
+        },
         "HEROKU_APP_NAME": {
-            "description": "Re-enter the Heroku APP Name which you entered already ( Above ).",
+            "description": "Re-Enter the heroku app name. [ Same name which you have entered on 'app-name' ( above )].",
             "required": true
-        },
-        "DEBUG": {
-            "description": "Leave this.",
-            "required": true,
-            "value": "false"
-        },
-        "REMOVE_BG_API_KEY": {
-            "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
-            "required": false
         },
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
             "value": "default"
-        },
-        "BAN_MESSAGE": {
-            "description": "Customizable Ban Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "KICKME_MESSAGE": {
-            "description": "Customizable Kickme Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "PROMOTE_MESSAGE": {
-            "description": "Customizable Promote Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "DEMOTE_MESSAGE": {
-            "description": "Customizable Demote Message! Use => default, to change back.",
-            "required": false,
-            "value": "default"
-        },
-        "BOT_PRESENCE": {
-            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
-            "required": false,
-            "value": "offline"
         }
     },
     "addons": [{
